@@ -1,0 +1,14 @@
+Background Color:
+#FBF3E4
+Font color
+#000000
+Red color
+#B91646
+
+----------------
+body{ background-color: #1e1e1e;};
+a{color: #CCC;}
+a:hover {color: #F99;}
+p {
+  color: #666;
+}

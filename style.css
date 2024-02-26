@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ----- Color code ------ */
+/* {color: #1f2122;} Body backgorund  */
+/* {color: #27292a;} Page Content Bg Color */
+/*{color: #666;} Para Color */
+/* {color: #e75e8d;} Button Bg Color */
+/* {color: #F99;} Button Hover Color */
+/* font-family: 'Open Sans', sans-serif; */
+
+
+/* ----- Global Style ----- */
+.btn {
+    padding: 10px 25px;
+    border-radius: 5px;
+    background-color: #e75e8d;
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+}
+
+/* ------------------- */
+html{
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #1e1e1e;
+    padding: 20px 100px;
+}
+
+/* ----- Header Section Start -----  */
+.header-sec {
+    display: grid;
+    grid-template-columns: auto 40%;
+    align-items: center;
+    padding: 10px;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar ul li {
+    list-style: none;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #666;
+    font-size: 15px;
+}
+
+.navbar ul li .active {
+    color: #e75e8d;
+
+}
+
+.navbar ul li a:hover {
+    color: #e75e8d;
+}
+
+.user {
+    width: 30px;
+    cursor: pointer;
+}
+
+
+/* ----- Page Content -----  */
+.page-content {
+    background: #27292a;
+    display: grid;
+    row-gap: 50px;
+    padding: 70px;
+    margin: 20px auto;
+    border-radius: 30px;
+}
+
+/* ----- Header Section End -----  */
+
+/* ----- Hero Section Start -----  */
+.hero-sec {
+    background: url(images/banner-bg.jpg);
+    background-size: cover;
+    padding: 60px 50px;
+    border-radius: 25px;
+    color: #fff;
+}
+
+.hero-para {
+    font-size: 20px;
+}
+
+.hero-heading {
+    margin: 30px 0 40px;
+    line-height: 50px;
+    font-size: 45px;
+}
+
+.hero-heading span {
+    color: #e75e8d;
+}
+
+/* ----- Hero Section End -----  */
+
+/* ----- Popular Section Start -----  */
+.popular-sec {
+    background-color: #1e1e1e;
+    border-radius: 25px;
+    padding: 40px 50px 0px;
+    text-align: center;
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+
+.popular-sec h1 {
+    color: #e75e8d;
+}
+
+.popular-sec h1 span {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.popular-sec .box-container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    row-gap: 30px;
+    column-gap: 50px;
+    margin: 40px auto;
+}
+
+.popular-sec .box-container .box {
+    display: grid;
+    row-gap: 10px;
+    background: #27292a;
+    width: 250px;
+    border-radius: 25px;
+    padding: 30px 5px 40px;
+    cursor: pointer;
+}
+
+.box-container .box .box-img {
+    text-align: center;
+}
+
+.box-container .box .box-img img {
+    width: 200px;
+    border-radius: 20px;
+}
+
+.box-container .box .box-content {
+    margin-top: 10px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: right;
+    padding: 0px 20px;
+}
+
+.box-content .b-left-content {
+    text-align: left;
+}
+
+.box-content .b-left-content p {
+    font-size: 16px;
+    color: #666;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.box-content .b-right-content p {
+    font-size: 13px;
+}
+
+.box-content .b-right-content .b-icon-right-top {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+}
+
+.box-content .b-right-content .icon {
+    width: 15px;
+}
+
+.box-content .b-right-content .b-icon-right-bottom {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    column-gap: 8px;
+}
+
+/* ----- Popular Section End -----  */
+
+/* ----- Gaming Library Section Start -----  */
+.library-sec {
+    background-color: #1e1e1e;
+    border-radius: 25px;
+    padding: 40px 50px 0px;
+    text-align: center;
+}
+
+.library-sec h1 {
+    color: #e75e8d;
+    text-align: left;
+}
+
+.library-sec h1 span {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.library-row {
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    align-items: center;
+    margin: 50px 0;
+    color: #fff;
+}
+
+.library-row .first-content, .sec-content, .third-content, .fourth-content {
+    text-align: left;
+    line-height: 25px;
+}
+
+.library-row img {
+    width: 100px;
+    border-radius: 20px;
+}
+
+.library-row p {
+    font-size: 14px;
+    color: #666;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.library-row .library-btn .discover-btn {
+    border: 2px solid #e75e8d;
+    color: #e75e8d;
+    background-color: transparent;
+
+}
+
+.library-row .library-btn .discover-btn:hover {
+    color: #fff;
+    background-color: #e75e8d;
+
+}
+
+/* ----- Gaming Library Section End -----  */
+
+/* ----- Footer Section Start -----  */
+.footer-sec {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.footer-sec .footer-content {
+    color: rgb(156, 156, 156);
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.footer-content span {
+    color: #e75e8d;
+    cursor: pointer;
+}
+
+/* ----- Footer Section End -----  */
